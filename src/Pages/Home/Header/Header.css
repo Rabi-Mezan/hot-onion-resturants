@@ -1,0 +1,26 @@
+.navbar img{
+    width: 85px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+.nav-menu button{
+    background-color: rgb(233, 88, 88);
+    border: 1px solid white;
+    color: white;
+    font-size: 12px;
+    padding: 5px 18px;
+    border-radius:20px;
+}
+
+.nav-menu button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
