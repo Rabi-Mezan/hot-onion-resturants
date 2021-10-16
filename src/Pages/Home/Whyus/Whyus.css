@@ -1,11 +1,32 @@
 
-
-
 .title-text{
     width: 450px;
     margin-left: 50px;
 }
 
-.title-text p{
+.whyus p{
+    font-size: 11px;
+}
+
+.single-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.single-service h6{
+    font-weight: bold;
+}
+
+.single-service i{
+    margin-right: 5px;
+    padding: 7px;
     font-size: 10px;
+    background-color: crimson;
+    color: white;
+    border-radius: 50%;
 }

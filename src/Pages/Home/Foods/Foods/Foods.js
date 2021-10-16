@@ -1,28 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Nav } from 'react-bootstrap';
-
+import useAuth from '../../../../hooks/useAuth';
 
 import Food from '../Food/Food';
 import './Foods.css'
 
 const Foods = () => {
-    const [foods, setFoods] = useState([])
+    const [foods] = useAuth()
 
-    useEffect(() => {
-        fetch('foods.json')
-            .then(res => res.json())
-            .then(data => setFoods(data))
-
-    }, [foods])
 
     const handleTypeButton = (type) => {
-        const foodType = foods.filter(food => food.type === type);
-        setFoods(foodType);
+        // const foodType = foods.filter(food => food.type === type);
+        // console.log(foodType);
 
     }
-
-
-
     return (
 
         <div className='mt-5 food-container'>
@@ -34,8 +24,9 @@ const Foods = () => {
             </div>
             <div className='food-items mt-5'>
                 {
-                    foods.slice(0, 6).map(food => <Food
-                        // key={food.id}
+
+                    foods.map(food => <Food
+                        key={food.id}
                         food={food}
                     ></Food>)
                 }
