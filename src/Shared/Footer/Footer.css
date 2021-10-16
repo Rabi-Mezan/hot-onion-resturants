@@ -1,0 +1,16 @@
+.footer{
+    background-color: rgba(17, 17, 17, 0.904);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    place-content: center;
+    height: 200px;
+}
+
+.footer ul{
+    list-style: none;
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 20px;
+}
