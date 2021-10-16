@@ -5,7 +5,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div>
-            <div className='footer'>
+            <div className='footer mt-5'>
                 <div>
                     <img className='w-25' src={logo2} alt="" />
                 </div>
@@ -32,5 +32,4 @@ const Footer = () => {
     );
 };
 
-export default Footer; <div>
-    <img src="" alt="" /></div>
+export default Footer;

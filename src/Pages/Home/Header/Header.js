@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import img from '../../../images/logo2.png'
 import './Header.css'
 
@@ -15,11 +16,12 @@ const Header = () => {
                     </div>
                     <div>
                         <Nav className="me-auto nav-menu">
-                            <Nav.Link href="/cart"><i className="fas fa-shopping-cart text-dark"></i></Nav.Link>
-                            <Nav.Link className='text-dark fw-bold' href="/login">Login</Nav.Link>
-                            <Nav.Link href="/signup">
+                            <Link to="/cart"><i className="fas fa-shopping-cart text-dark me-3"></i></Link>
+                            <Link style={{ textDecoration: 'none' }} className='text-dark fw-bold me-3' to="/home">Home</Link>
+                            <Link style={{ textDecoration: 'none' }} className='text-dark fw-bold me-3' to="/login">Login</Link>
+                            <Link style={{ textDecoration: 'none' }} to="/signup">
                                 <button>sign up</button>
-                            </Nav.Link>
+                            </Link>
                         </Nav>
                     </div>
                 </Container>

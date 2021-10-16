@@ -14,8 +14,8 @@
 }
 
 .foods-time button:hover{
-    border-bottom: 2px solid rgb(241, 61, 61);
-    color: rgb(241, 61, 61);
+    border-bottom: 2px solid rgb(243, 33, 75);
+    color:rgb(243, 33, 75);
 }
 
 .food-items{
@@ -27,8 +27,8 @@
 
 .food-container .checkout-btn{
     margin-top: 40px;
-    background-color: rgb(241, 61, 61);
-    border: 1px solid gray;
+    background-color: rgb(243, 33, 75);
+    border: none;
     border-radius: 20px;
     color: white;
     padding: 5px 25px;

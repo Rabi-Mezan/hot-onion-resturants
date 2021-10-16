@@ -6,6 +6,7 @@ import './Foods.css'
 
 const Foods = () => {
     const [foods] = useAuth()
+    // console.log(foods)
 
 
     const handleTypeButton = (type) => {
@@ -31,10 +32,8 @@ const Foods = () => {
                     ></Food>)
                 }
             </div>
-
             <button className='checkout-btn'>Checkout Your Food</button>
-
-        </div>
+        </div >
     );
 };
 
