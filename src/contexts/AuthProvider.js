@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import useFirebase from '../hooks/useFirebase';
+
 
 
 export const AuthConext = createContext();
@@ -7,7 +7,7 @@ export const AuthConext = createContext();
 
 const AuthProvider = ({ children }) => {
 
-    const allContext = useFirebase()
+    // const allContext = useFirebase()
 
     const [foods, setFoods] = useState([])
 
@@ -20,7 +20,7 @@ const AuthProvider = ({ children }) => {
 
 
     return (
-        <AuthConext.Provider value={[foods, setFoods, allContext]} >
+        <AuthConext.Provider value={[foods, setFoods]} >
             {children}
         </AuthConext.Provider >
     );

@@ -6,14 +6,17 @@ import './Foods.css'
 
 const Foods = () => {
     const [foods] = useAuth()
+    const [menuTabs, setmenuTabs] = useState('breakfast')
+    const [loading, setLoading] = useState(false)
     // console.log(foods)
 
 
     const handleTypeButton = (type) => {
-        // const foodType = foods.filter(food => food.type === type);
-        // console.log(foodType);
+        setmenuTabs(type)
 
     }
+
+
     return (
 
         <div className='mt-5 food-container'>
@@ -26,7 +29,7 @@ const Foods = () => {
             <div className='food-items mt-5'>
                 {
 
-                    foods.map(food => <Food
+                    foods.filter((food) => menuTabs == food.type).map(food => <Food
                         key={food.id}
                         food={food}
                     ></Food>)

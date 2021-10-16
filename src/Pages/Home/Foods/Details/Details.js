@@ -36,7 +36,7 @@ const Details = () => {
                     </div>
                     <button className='add mt-2'><i class="fas fa-shopping-cart me-2"></i>Add</button>
                     <div className='mt-5 w-100'>
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active d-flex ">
                                     <img className='w-25 me-2' src={singleFood?.img} class="d-block w-25" alt="..." />
